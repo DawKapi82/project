@@ -1,26 +1,28 @@
-html {
+html { /*styles for entire page */
 	scroll-behavior: smooth;
 	background: url('../images/background.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-
+/* nav and footer sections placed fixed */
 nav, footer {
 	background-color: black;
     text-align: center;
     padding: 1%;
-    position: fixed;
+    position: fixed; /* footer and nav should be placed in the same position all the time */
     font-family: monospace;
     z-index: 1;
 }
 
+/* nav position set to left upper corner */
 nav {
     top: 0;
     left: 0;
     width: 100%;
 }
 
+/* footer position set to left bottom corner */
 footer {
 	bottom: 0;
 	left:  0;
@@ -29,6 +31,7 @@ footer {
 	font-size: 25px;
 }
 
+/* navigation links styles */
 nav > a {
 	text-decoration: none;
 	color: white;
@@ -36,20 +39,22 @@ nav > a {
 	padding: 2%;
 }
 
-
+/* navigation links styles when hover */
 nav > a:hover {
 	color: yellow;
 }
-
+/* main page container */
 .container {
 	padding: 7%;
 }
 
+/* images on page style */
 img {
 	border: 2px solid white;
     border-radius: 7px;
 }
 
+/* images in articles parts style */
 .img-text {	
     width: auto;
     float: left;
@@ -58,6 +63,7 @@ img {
 
 }
 
+/* images size set on diffrent device widths */
 @media only screen and (min-width:488px)  {
 	.img-text {
 		height: 250px;
@@ -78,10 +84,12 @@ img {
 	}
 }
 
+/* mail image size in contact form */
 .img-mail {
 	width: auto;
 }
 
+/* article part on main page styles */
 .part {
 	margin-top: 2%;
 	padding: 2%;
@@ -90,28 +98,32 @@ img {
     opacity: 0.8;
 }
 
+/* text elements settings */
 p, label {
 	font-family: sans-serif;
     font-weight: 700;
 }
 
-
+/*contact form styles */
 .contact {
 	display: flex;
 	align-items: center;
     justify-content: center;
 }
 
+/*contact form container div styles for smaller screens */
 @media only screen and (max-width:858px)  {
 	.contact {
 		flex-direction: column;
 	}
 }
 
+/*contact form sections style */
 .contact > div {
 	min-width: 220px;
 }
 
+/* center helper class */
 .center {
 	text-align: center;
 }
@@ -121,11 +133,13 @@ p, label {
 	min-width: 220px;
 }
 
+/*contact form styles */
 .contact-form > div {
 	margin: 5%;
 	text-align: center;
 }
 
+/*form inputs styles */ 
 input, textarea, button {
 	border: 2px solid black;
     border-radius: 7px;
@@ -148,6 +162,7 @@ textarea {
 	min-height: 250px;
 }
 
+/* social media links with images styles */
 .link-img {
 	height: 25px;
     width: auto;
@@ -158,6 +173,7 @@ footer > a {
 	text-decoration: none;
 }
 
+/* autor signature style in footer */
 .autor {
 	position: fixed;
     left: 40px;
